@@ -1,0 +1,101 @@
+:root {
+    --brand-color: #2563eb;
+    --brand-dark: #1e40af;
+    --success-color: #10b981;
+    --bg-main: #f8fafc;
+    --card-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+}
+
+body {
+    background-color: var(--bg-main);
+    color: #1e293b;
+    font-family: 'Tajawal', sans-serif;
+    line-height: 1.7;
+}
+
+/* الهيدر المطور */
+.platform-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.logo-area { display: flex; align-items: center; gap: 10px; }
+.logo-area h1 { font-size: 1.5rem; margin: 0; color: var(--brand-dark); }
+.status-badge { background: #dcfce7; color: #166534; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: bold; }
+
+/* بطاقة الترحيب Hero Card */
+.hero-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
+    border: none;
+    text-align: center;
+    padding: 50px 30px;
+}
+
+.stats-row {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 30px 0;
+}
+
+.stat-item { display: flex; flex-direction: column; }
+.stat-value { font-size: 2rem; font-weight: 800; color: var(--brand-color); }
+.stat-label { font-size: 0.9rem; color: #64748b; }
+
+/* تحسين شكل الأسئلة */
+.question-block {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.2s;
+}
+
+.question-block:hover { transform: translateY(-3px); }
+
+/* الأزرار المطورة */
+.btn-start {
+    background: var(--brand-color);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2);
+}
+
+.btn-finish {
+    background: var(--success-color);
+    color: white;
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-finish:hover { background: #059669; filter: brightness(1.1); }
+
+/* دائرة النتيجة النهائية */
+.score-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: var(--brand-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 20px auto;
+}
